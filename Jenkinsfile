@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/Vikash04IIITB/DevOps-Learning.git'
+                git branch: 'main', url: 'https://github.com/Vikash04IIITB/DevOps-Learning.git'
             }
         }
         stage('List Files') {
